@@ -111,7 +111,7 @@ button:disabled { opacity: 0.45; cursor: default; filter: none; }
   border-top: 1px solid var(--rule);
 }
 .side { position: sticky; top: 0; align-self: start; padding: 2.5rem 0 2rem; font-family: var(--sans); }
-.me { width: 120px; height: 120px; object-fit: cover; object-position: 50% 32%; border-radius: 50%; display: block; margin-bottom: 1.75rem; border: 3px solid var(--panel); }
+.me { width: 120px; height: 120px; object-fit: cover; object-position: 50% 50%; border-radius: 50%; display: block; margin-bottom: 1.75rem; border: 3px solid var(--panel); }
 .side ul { list-style: none; margin: 0; padding: 0; }
 .side li a { display: block; padding: 0.3rem 0 0.3rem 0.9rem; margin-left: -0.9rem; border-left: 2px solid transparent; color: var(--muted); text-decoration: none; font-size: 0.98rem; }
 .side li a:hover { color: var(--ink); }
