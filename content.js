@@ -3,7 +3,7 @@
   To update the site, edit the text below and commit. No build step.
 
   Inline links:  write [link text](https://example.com) inside any text.
-  Dates:         "YYYY-MM" (or "YYYY-MM-DD"). News is sorted newest first automatically.
+  Dates:         "YYYY-MM", or just "YYYY" if the month is unknown.
   Hide a field:  leave it as an empty string "" or an empty list [].
 */
 
@@ -30,13 +30,13 @@ window.SITE = {
     "Earlier, I co-founded Kshemin, an edge-AI fleet-management startup in India, where I led a ten-person data science team and co-invented a patented driver-monitoring system. I have competed on Kaggle since 2017 and hold an M.S. in Data Science from Northeastern University."
   ],
 
-  // Add new items at the top or bottom; they are sorted by date.
+  // Newest first. Items are grouped by year automatically; within a year they keep the order written here.
   news: [
     { date: "2026-11", text: "Joined the Strands team in AWS Agentic AI, working on multimodal decision models for agents and physical AI." },
     { date: "2026-09", text: "Led the science for self-improving bot detection on AWS WAF: a fingerprint reputation model with LLM-judge labeling and nightly audits, now serving all AWS WAF customers." },
     { date: "2026", text: "Led the science for AWS WAF API Security, building detections for the OWASP API Top 10." },
-    { date: "2025", text: "Led the development of a multi-agent threat investigation system for security analysts and presented it at an internal Amazon conference." },
     { date: "2025", text: "Worked on agentic security, building attack environments that test AI agents against prompt injection, tool poisoning and context poisoning." },
+    { date: "2024", text: "Led the development of a multi-agent threat investigation system for security analysts and presented it at an internal Amazon conference." },
     { date: "2024-07", text: "Joined Amazon Web Services as an Applied Scientist on the Perimeter Protection team (AWS WAF)." },
     { date: "2023-06", text: "Completed a co-op with the AI Center of Excellence at Fidelity Investments." }
   ],

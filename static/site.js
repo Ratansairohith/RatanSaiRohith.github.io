@@ -61,7 +61,7 @@
 
   section("about", "About", (S.about || []).map(function (p) { return "<p>" + rich(p) + "</p>"; }).join(""));
 
-  var news = (S.news || []).slice().sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
+  var news = (S.news || []).slice().sort(function (a, b) { var x = String(a.date).slice(0, 4), y = String(b.date).slice(0, 4); return x < y ? 1 : x > y ? -1 : 0; });
   var SHOW = 5;
   if (news.length) {
     var years = [];

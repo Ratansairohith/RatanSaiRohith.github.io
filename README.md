@@ -10,7 +10,7 @@ Common edits:
 
 - **Post an update:** add a line to `news`, e.g.
   `{ date: "2027-02", text: "Our paper on X was accepted at ICML." },`
-  Items are sorted newest first automatically. The first five show; the rest sit behind a "Show all" button.
+  Write items newest first; they are grouped by year automatically. The first five show; the rest sit behind a "Show all" button.
 - **New role:** add an entry at the top of `experience`; set the previous role's `end` date.
 - **New project:** add to `projects`. Use `links: [{ label: "Paper", url: "https://..." }]` for links.
 - **Inline links anywhere:** write `[link text](https://example.com)`.
