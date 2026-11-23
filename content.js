@@ -32,12 +32,13 @@ window.SITE = {
 
   // Add new items at the top or bottom; they are sorted by date.
   news: [
-    { date: "2026-11", text: "Joined the Strands team in AWS Agentic AI to work on multimodal decision models for agents and physical AI." },
-    { date: "2026-10", text: "Our fingerprint reputation model for AWS WAF bot detection is now live for all AWS WAF customers, with a 15% lift in AUC on low-and-slow bots." },
-    { date: "2026-10", text: "A nightly error audit with blind dual LLM judges let us train a challenger model that cut live false positives from 13.2% to 5.0%." },
-    { date: "2026-09", text: "Started leading the science for a new family of self-improving bot detection models at AWS." },
+    { date: "2026-11", text: "Joined the Strands team in AWS Agentic AI, working on multimodal decision models for agents and physical AI." },
+    { date: "2026-09", text: "Led the science for self-improving bot detection on AWS WAF: a fingerprint reputation model with LLM-judge labeling and nightly audits, now serving all AWS WAF customers." },
+    { date: "2026", text: "Led the science for AWS WAF API Security, building detections for the OWASP API Top 10." },
+    { date: "2025", text: "Led the development of a multi-agent threat investigation system for security analysts and presented it at an internal Amazon conference." },
+    { date: "2025", text: "Worked on agentic security, building attack environments that test AI agents against prompt injection, tool poisoning and context poisoning." },
     { date: "2024-07", text: "Joined Amazon Web Services as an Applied Scientist on the Perimeter Protection team (AWS WAF)." },
-    { date: "2023-06", text: "Finished a co-op with the AI Center of Excellence at Fidelity Investments." }
+    { date: "2023-06", text: "Completed a co-op with the AI Center of Excellence at Fidelity Investments." }
   ],
 
   experience: [
@@ -62,7 +63,8 @@ window.SITE = {
         "Designed a nightly error audit across 500 customer sites that exposed a 13.7% real-world error rate hidden behind 1.1% on training labels; a challenger trained on audit labels cut live false positives from 13.2% to 5.0%. Per-customer models now retrain daily in shadow.",
         "Science lead for AWS WAF API Security: detections for the OWASP API Top 10 (enumeration, BOLA, BOPLA, BFLA) built on models of how clients move across API endpoints, plus a multi-agent framework that synthesizes realistic attacks against each customer's API surface.",
         "Learned behavioral embeddings for bot detection with contrastive training on a fine-tuned small open-weight LLM over 886M weekly requests (+7.9% AUC).",
-        "Built a multi-agent threat investigation system that cut investigation time by 32.6%; presented it at Amazon's internal machine learning conference."
+        "Built a multi-agent threat investigation system that cut investigation time by 32.6%; presented it at Amazon's internal machine learning conference.",
+        "Worked on agentic security: built environments that attack AI agents with prompt injection, tool poisoning and context poisoning, and collected the resulting traces for AI security research."
       ]
     },
     {
