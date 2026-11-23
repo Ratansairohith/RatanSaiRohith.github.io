@@ -77,7 +77,8 @@
 
   section("work", "Work", (S.experience || []).map(function (j, idx) {
     var meta = range(j.start, j.end) + (j.place ? ", " + esc(j.place) : "");
-    return '<details class="job"' + (idx < 2 ? " open" : "") + '><summary><p class="org">' + esc(j.org) + "</p><h3>" + esc(j.role) + '</h3><p class="meta">' + meta + "</p></summary>" +
+    var org = j.url ? '<a href="' + esc(j.url) + '">' + esc(j.org) + "</a>" : esc(j.org);
+    return '<details class="job"' + (idx < 2 ? " open" : "") + '><summary><p class="org">' + org + "</p><h3>" + esc(j.role) + '</h3><p class="meta">' + meta + "</p></summary>" +
       (j.points && j.points.length ? "<ul>" + j.points.map(function (p) { return "<li>" + rich(p) + "</li>"; }).join("") + "</ul>" : "") + "</details>";
   }).join(""));
 
@@ -102,7 +103,7 @@
   section("earlier", "Earlier projects", S.archive && S.archive.length ? '<ul class="archive">' + S.archive.map(function (a) {
     var n = a.url ? '<a href="' + esc(a.url) + '">' + esc(a.name) + "</a>" : esc(a.name);
     return "<li>" + n + (a.note ? ' <span class="note">' + rich(a.note) + "</span>" : "") + "</li>";
-  }).join("") + '</ul><p class="meta" style="margin-top:1rem">The <a href="archive/2020/">first version of this site</a>, built in 2020, is still online.</p>' : "");
+  }).join("") + "</ul>" : "");
 
   $("toc").innerHTML = sections.map(function (s) { return '<li><a href="#' + s.id + '">' + esc(s.title) + "</a></li>"; }).join("");
   $("foot").innerHTML = "<p>" + esc(S.name) + (S.email ? ', <a href="mailto:' + esc(S.email) + '">' + esc(S.email) + "</a>" : "") + "</p><p>" +

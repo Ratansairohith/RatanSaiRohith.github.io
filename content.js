@@ -27,7 +27,7 @@ window.SITE = {
   about: [
     "I'm an applied scientist at Amazon Web Services in Seattle. I recently joined the Strands team in AWS Agentic AI, where I work on multimodal decision models for agents and physical AI.",
     "Before that I spent two and a half years as a scientist on AWS WAF, leading the science for bot detection and API security. Most of that work came down to one question: how do you keep a detector honest when the thing it detects keeps changing? My answer was to let LLM judges label traffic, audit the production models every night, and retrain behind a statistical gate.",
-    "Earlier, I co-founded Kshemin, an edge-AI fleet-management startup in India, where I led a ten-person data science team and co-invented a patented driver-monitoring system. I have competed on Kaggle since 2017 and hold an M.S. in Data Science from Northeastern University."
+    "Earlier, I co-founded [Kshemin](https://ksheminlabs.com/), an edge-AI fleet-management startup in India, where I led a ten-person data science team and co-invented a patented driver-monitoring system. I have competed on Kaggle since 2017 and hold an M.S. in Data Science from Northeastern University."
   ],
 
   // Newest first. Items are grouped by year automatically; within a year they keep the order written here.
@@ -79,6 +79,7 @@ window.SITE = {
     },
     {
       org: "Kshemin Innovations",
+      url: "https://ksheminlabs.com/",
       role: "Co-founder and Senior Data Scientist",
       start: "2019",
       end: "2022",
@@ -86,7 +87,8 @@ window.SITE = {
       points: [
         "Co-founded an edge-AI fleet-management company and led its ten-person data science team; the company raised $4M and was incubated at T-Hub and NASSCOM.",
         "Shipped on-device models for driver distraction, face recognition, road damage detection and driver performance ranking on Jetson and Coral hardware.",
-        "Co-inventor on Indian patent 202041040669A."
+        "Co-inventor on Indian patent 202041040669A.",
+        "Featured in [The Better India](https://thebetterindia.com/263801/visakhapatnam-student-road-safety-innovation-startup-artificial-intelligence/), [Telangana Today](https://telanganatoday.com/t-hubs-new-programme-graduates-5-startups) and an [STPI India video](https://www.youtube.com/watch?v=WIvQZ9CsCYo)."
       ]
     }
   ],
