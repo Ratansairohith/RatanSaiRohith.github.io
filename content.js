@@ -94,9 +94,8 @@ window.SITE = {
       name: "TRAIT",
       status: "Personal research, 2026",
       summary:
-        "Learns a developer's taste from their own coding-agent sessions and steers the agent at the moments where it would otherwise go the wrong way, before the developer has to correct it. The coding agent stays the coder; TRAIT adds one sentence at the right time.",
-      detail:
-        "Trained on 469 of my own sessions (about 22k events). Preference tuning raised positive feedback on steers from 60% to 93%.",
+        "A framework for personalizing coding agents. TRAIT learns a developer's preferences from agent session traces and steers the agent at key decision points, before the developer needs to step in.",
+      detail: "",
       links: []
     },
     {
