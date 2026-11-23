@@ -13,7 +13,7 @@ window.SITE = {
   tagline:
     "I build learning systems that improve from their own traces: agents that decide, models that judge other models, and detection systems that retrain themselves as the adversary changes.",
   location: "Seattle, WA",
-  email: "ratan.kokku@gmail.com",
+  email: "ratan2513@gmail.com",
   photo: "static/me.jpg",
   resume: "", // paste a link to your current resume PDF here to show a Resume link
   updated: "2026-11-21",
@@ -129,6 +129,15 @@ window.SITE = {
     { title: "Kaggle Competitions Expert", detail: "Highest rank 487; 8 silver and 6 bronze medals across 33 competitions." },
     { title: "Chief Minister's innovation award", detail: "Awarded to Kshemin." },
     { title: "Gold medal, IIA International Innovation Fair", detail: "2017." }
+  ],
+
+  // Press and media. Leave url as "" for print-only coverage.
+  press: [
+    { date: "2021-10", outlet: "The Better India", title: "Students build innovative solution to stop drivers from falling asleep at the wheel", url: "https://thebetterindia.com/263801/visakhapatnam-student-road-safety-innovation-startup-artificial-intelligence/" },
+    { date: "2021-09", outlet: "Telangana Today", title: "T-Hub's new programme graduates 5 startups, including Kshemin Labs", url: "https://telanganatoday.com/t-hubs-new-programme-graduates-5-startups" },
+    { date: "2020", outlet: "STPI India", title: "Kshemin Labs, a startup at STPI MOTION, pioneering AI-assisted safe driving (video)", url: "https://www.youtube.com/watch?v=WIvQZ9CsCYo" },
+    { date: "2019-09", outlet: "Andhra Jyothy", title: "Feature on Kshemin Labs and its driver-safety device", url: "" },
+    { date: "2018-08", outlet: "The Times of India", title: "Coverage of our 3D-printed prosthetic arm project", url: "" }
   ],
 
   education: [

@@ -157,6 +157,13 @@ p { margin: 0 0 1em; }
 .project:first-of-type { border-top: 0; padding-top: 0; }
 .project .detail { color: var(--muted); font-size: 1rem; }
 
+.press { list-style: none; margin: 0; padding: 0; }
+.press li { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: 1rem; padding: 0.6rem 0; }
+.press time { font: 500 0.92rem var(--sans); color: var(--muted); font-variant-numeric: tabular-nums; padding-top: 0.12rem; }
+.press .outlet { display: block; font: 600 1rem var(--sans); }
+.press .note { color: var(--muted); font-size: 0.95rem; }
+@media (max-width: 900px) { .press li { grid-template-columns: 1fr; gap: 0; } }
+
 /* recognition + education */
 .facts { margin: 0; display: grid; gap: 0.9rem; }
 .facts div { display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr); gap: 1.25rem; }

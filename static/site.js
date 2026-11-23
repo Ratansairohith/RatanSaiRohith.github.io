@@ -93,6 +93,10 @@
     return '<dl class="facts">' + list.map(function (x) { return "<div><dt>" + dt(x) + "</dt><dd>" + dd(x) + "</dd></div>"; }).join("") + "</dl>";
   }
   section("recognition", "Recognition", facts(S.recognition, function (r) { return esc(r.title); }, function (r) { return rich(r.detail); }));
+  section("press", "Press", S.press && S.press.length ? '<ul class="press">' + S.press.slice().sort(function (a, b) { return a.date < b.date ? 1 : -1; }).map(function (x) {
+    var title = x.url ? '<a href="' + esc(x.url) + '">' + esc(x.title) + "</a>" : esc(x.title) + ' <span class="note">(print)</span>';
+    return '<li><time datetime="' + esc(x.date) + '">' + fmtDate(x.date) + '</time><div><span class="outlet">' + esc(x.outlet) + "</span>" + title + "</div></li>";
+  }).join("") + "</ul>" : "");
   section("education", "Education", facts(S.education, function (e) { return esc(e.degree); }, function (e) {
     return esc(e.school) + (e.detail ? '<br><span class="meta">' + esc(e.detail) + "</span>" : "");
   }));
