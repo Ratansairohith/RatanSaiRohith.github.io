@@ -62,7 +62,7 @@ window.SITE = {
         "Science lead for bot detection. Built a fingerprint reputation model now serving all AWS WAF customers (+15% AUC on low-and-slow bots), wrapped in a nightly loop where two independent LLM judges label fingerprints, settle disagreements by reading each other's reasoning, and feed a model that retrains behind a statistical gate.",
         "Designed a nightly error audit across 500 customer sites that exposed a 13.7% real-world error rate hidden behind 1.1% on training labels; a challenger trained on audit labels cut live false positives from 13.2% to 5.0%. Per-customer models now retrain daily in shadow.",
         "Science lead for AWS WAF API Security: detections for the OWASP API Top 10 (enumeration, BOLA, BOPLA, BFLA) built on models of how clients move across API endpoints, plus a multi-agent framework that synthesizes realistic attacks against each customer's API surface.",
-        "Learned behavioral embeddings for bot detection with contrastive training on a fine-tuned small open-weight LLM over 886M weekly requests (+7.9% AUC).",
+        "Learned behavioral embeddings for bot detection with contrastive training on a fine-tuned small open-weight LLM (+7.9% AUC).",
         "Built a multi-agent threat investigation system that cut investigation time by 32.6%; presented it at Amazon's internal machine learning conference.",
         "Worked on agentic security: built environments that attack AI agents with prompt injection, tool poisoning and context poisoning, and collected the resulting traces for AI security research."
       ]
@@ -122,9 +122,9 @@ window.SITE = {
     {
       name: "Open-source contributions",
       status: "Ongoing",
-      summary: "Contributions to the [Strands Agents SDK](https://github.com/strands-agents/sdk-python) and to Moss.",
+      summary: "Contributions to the [Strands Agents SDK](https://github.com/strands-agents/sdk-python), and the Strands Agents integration for [Moss](https://github.com/usemoss/moss), a real-time semantic search runtime for AI agents.",
       detail: "",
-      links: []
+      links: [{ label: "Strands Agents SDK", url: "https://github.com/strands-agents/sdk-python" }, { label: "Moss integration", url: "https://github.com/usemoss/moss/tree/main/packages/strands-agents-moss" }]
     }
   ],
 
