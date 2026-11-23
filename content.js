@@ -150,7 +150,7 @@ window.SITE = {
 
   education: [
     { school: "Northeastern University, Khoury College", degree: "M.S. in Data Science", detail: "GPA 3.90 / 4.0" },
-    { school: "GVP College of Engineering (Autonomous)", degree: "B.Tech in Electronics and Communication Engineering", detail: "" }
+    { school: "Jawaharlal Nehru Technological University, Kakinada", degree: "B.Tech in Electronics and Communication Engineering", detail: "GVP College of Engineering (Autonomous), Visakhapatnam" }
   ],
 
   // Older work, shown in a compact list near the bottom.
