@@ -14,7 +14,7 @@ window.SITE = {
     "I build learning systems that improve from their own traces: agents that decide, models that judge other models, and detection systems that retrain themselves as the adversary changes.",
   location: "Seattle, WA",
   email: "ratan2513@gmail.com",
-  photo: "static/portrait.jpg",
+  photo: "static/me.jpg",
   resume: "", // paste a link to your current resume PDF here to show a Resume link
   updated: "2026-11-21",
 
