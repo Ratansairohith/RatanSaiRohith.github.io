@@ -85,10 +85,11 @@ window.SITE = {
       end: "2022",
       place: "Hyderabad",
       points: [
-        "Co-founded an edge-AI fleet-management company and led its ten-person data science team; the company raised $4M and was incubated at T-Hub and NASSCOM.",
+        "Co-founded an edge-AI driver-safety and fleet-management company and led its ten-person data science team; incubated at T-Hub and NASSCOM.",
         "Shipped on-device models for driver distraction, face recognition, road damage detection and driver performance ranking on Jetson and Coral hardware.",
         "Co-inventor on Indian patent 202041040669A.",
-        "Featured in [The Better India](https://thebetterindia.com/263801/visakhapatnam-student-road-safety-innovation-startup-artificial-intelligence/), [Telangana Today](https://telanganatoday.com/t-hubs-new-programme-graduates-5-startups) and an [STPI India video](https://www.youtube.com/watch?v=WIvQZ9CsCYo)."
+        "Built 3D-printed prosthetic arms delivered to The Ability People Organization, an NGO in Visakhapatnam.",
+        "Featured in [The Better India](https://thebetterindia.com/263801/visakhapatnam-student-road-safety-innovation-startup-artificial-intelligence/), [Telangana Today](https://telanganatoday.com/t-hubs-new-programme-graduates-5-startups), [Made in India Design](https://madeinindia.design/solution-stop-drivers-falling-asleep-wheel) and an [STPI India video](https://www.youtube.com/watch?v=WIvQZ9CsCYo)."
       ]
     }
   ],
@@ -129,16 +130,19 @@ window.SITE = {
 
   recognition: [
     { title: "Indian patent 202041040669A", detail: "Co-inventor, from work at Kshemin." },
-    { title: "Kaggle Notebooks Master", detail: "Highest rank 40; 7 gold and 8 silver notebooks, 3,400+ upvotes." },
+    { title: "Kaggle Notebooks Master", detail: "Highest rank 40; 7 gold, 10 silver and 1 bronze notebooks, 3,400+ upvotes." },
     { title: "Kaggle Competitions Expert", detail: "Highest rank 487; 8 silver and 6 bronze medals across 33 competitions." },
-    { title: "Chief Minister's innovation award", detail: "Awarded to Kshemin." },
-    { title: "Gold medal, IIA International Innovation Fair", detail: "2017." }
+    { title: "Chief Minister's awards, Andhra Pradesh", detail: "Awarded to Kshemin in 2017 and 2023." },
+    { title: "Publishsutra Inspire Award", detail: "I-Innovate online hackathon, 2020." },
+    { title: "ICT Academy Student Innovator Award", detail: "Second prize for the Driver Stimulus Index, Andhra Pradesh and Telangana, 2018." },
+    { title: "Gold medal, IIA International Innovation Fair", detail: "For the Driver Stimulus Index, 2017." }
   ],
 
   // Press and media. Leave url as "" for print-only coverage.
   press: [
     { date: "2021-10", outlet: "The Better India", title: "Students build innovative solution to stop drivers from falling asleep at the wheel", url: "https://thebetterindia.com/263801/visakhapatnam-student-road-safety-innovation-startup-artificial-intelligence/" },
     { date: "2021-09", outlet: "Telangana Today", title: "T-Hub's new programme graduates 5 startups, including Kshemin Labs", url: "https://telanganatoday.com/t-hubs-new-programme-graduates-5-startups" },
+    { date: "", outlet: "Made in India Design", title: "Product feature on the driver drowsiness detection system", url: "https://madeinindia.design/solution-stop-drivers-falling-asleep-wheel" },
     { date: "2020", outlet: "STPI India", title: "Kshemin Labs, a startup at STPI MOTION, pioneering AI-assisted safe driving (video)", url: "https://www.youtube.com/watch?v=WIvQZ9CsCYo" },
     { date: "2019-09", outlet: "Andhra Jyothy", title: "Feature on Kshemin Labs and its driver-safety device", url: "" },
     { date: "2018-08", outlet: "The Times of India", title: "Coverage of our 3D-printed prosthetic arm project", url: "" }
