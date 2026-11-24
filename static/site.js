@@ -85,7 +85,7 @@
   section("projects", "Projects", (S.projects || []).map(function (p) {
     var l = (p.links || []).map(function (x) { return '<a href="' + esc(x.url) + '">' + esc(x.label) + "</a>"; }).join("&ensp;");
     return '<article class="project"><h3>' + esc(p.name) + "</h3>" + (p.status ? '<p class="meta">' + esc(p.status) + "</p>" : "") +
-      "<p>" + rich(p.summary) + "</p>" + (p.detail ? '<p class="detail">' + rich(p.detail) + "</p>" : "") + (l ? "<p>" + l + "</p>" : "") + "</article>";
+      "<p>" + rich(p.summary) + "</p>" + (p.image ? '<figure class="shot"><a href="' + esc(p.imageFull || p.image) + '" aria-label="Open full-size image of ' + esc(p.name) + '"><img src="' + esc(p.image) + '" alt="' + esc(p.imageAlt || p.name) + '" loading="lazy"></a><figcaption>Click to open full size</figcaption></figure>' : "") + (p.detail ? '<p class="detail">' + rich(p.detail) + "</p>" : "") + (l ? "<p>" + l + "</p>" : "") + "</article>";
   }).join(""));
 
   function facts(list, dt, dd) {

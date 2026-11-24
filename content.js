@@ -5,6 +5,7 @@
   Inline links:  write [link text](https://example.com) inside any text.
   Dates:         "YYYY-MM", or just "YYYY" if the month is unknown.
   Hide a field:  leave it as an empty string "" or an empty list [].
+  Project images: put the file in static/projects/ and set image: "static/projects/name.jpg".
 */
 
 window.SITE = {
@@ -100,6 +101,9 @@ window.SITE = {
       summary:
         "A framework for personalizing coding agents. TRAIT learns a developer's preferences from agent session traces and steers the agent at key decision points, before the developer needs to step in.",
       detail: "",
+      image: "static/projects/trait.jpg",
+      imageFull: "static/projects/trait.png",
+      imageAlt: "TRAIT pipeline: agents label my corrections, SFT then DPO training, asking TRAIT at a fork, and coding agents reporting feedback",
       links: []
     },
     {
