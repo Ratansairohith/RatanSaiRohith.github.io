@@ -111,6 +111,14 @@ window.SITE = {
       links: []
     },
     {
+      name: "Market Signals Desk",
+      status: "Personal research, 2026",
+      summary:
+        "A multi-agent research desk for the stock market that runs on a schedule, including weekends. Specialist agents read the charts, earnings and news for every tracked stock, and a lead agent combines them into one verdict per stock, delivered as a pre-market brief and a private dashboard. Every call it makes is graded over time, so the desk keeps an honest track record of what worked and why.",
+      detail: "It informs my own decisions; it doesn't place trades.",
+      links: []
+    },
+    {
       name: "NeuralPizza-7B",
       status: "Open-weight model",
       summary:
