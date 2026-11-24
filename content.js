@@ -112,6 +112,9 @@ window.SITE = {
       summary:
         "A scheduled crew of specialized agents (reader, synthesizer, verifier, devil's advocate, judge) that turns each day's ML papers on arXiv into a ranked portfolio of testable research hypotheses, using hostile literature search, an evidence ladder and Elo ranking.",
       detail: "",
+      image: "static/projects/researchcrew.jpg",
+      imageFull: "static/projects/researchcrew.png",
+      imageAlt: "ResearchCrew pipeline: read the day's papers, refine before inventing, prove then measure, attack then rank, remember and report",
       links: []
     },
     {
