@@ -4,6 +4,7 @@ subtitle: "What runs every day, what held up when scored, where it has been wron
 date: 2026-11-23
 summary: "A tour of my agent-run research desk: its daily routine, its graded track record (two chart patterns held up, most did not), and its full morning read on American Express."
 reading_time: "9 min"
+scripts: axp-data.js
 ---
 
 ## Why I built a research desk out of agents

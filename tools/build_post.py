@@ -2,7 +2,8 @@
 
 Usage: python3 tools/build_post.py writing/<slug>/post.md
 
-Reads the front matter (title, subtitle, date, summary, reading_time), converts the
+Reads the front matter (title, subtitle, date, summary, reading_time, and optional
+scripts: a comma-separated list of data files in the post folder), converts the
 Markdown to HTML, turns each [[FIGURE: name | note]] line into a figure slot that
 writing/figures.js fills in, and writes writing/<slug>/index.html next to the source.
 """
@@ -52,6 +53,8 @@ def main(path):
               .replace("{{date}}", meta.get("date", ""))
               .replace("{{nice_date}}", nice_date)
               .replace("{{reading_time}}", html.escape(meta.get("reading_time", "")))
+              .replace("{{scripts}}", "".join('<script src="%s"></script>\n  ' % html.escape(x.strip())
+                                               for x in meta.get("scripts", "").split(",") if x.strip()))
               .replace("{{content}}", content))
     (src.parent / "index.html").write_text(out, encoding="utf-8")
     print("wrote", src.parent / "index.html")
