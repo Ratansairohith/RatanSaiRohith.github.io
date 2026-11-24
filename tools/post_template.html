@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}} | Ratan Kokku</title>
+  <meta name="description" content="{{summary}}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{summary}}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/png" href="../../static/favicon.png">
+  <link rel="apple-touch-icon" href="../../static/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;800&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap">
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="../../static/site.css">
+  <link rel="stylesheet" href="../post.css">
+</head>
+<body>
+  <a class="skip" href="#post">Skip to the post</a>
+  <div class="topbar">
+    <a class="mark" href="../../">Ratan Kokku</a>
+    <button class="theme" id="theme" type="button" aria-label="Switch color theme">Dark mode</button>
+  </div>
+
+  <article class="post" id="post">
+    <header class="post-head">
+      <p class="post-meta"><a href="../../#writing">Writing</a><span aria-hidden="true">/</span><time datetime="{{date}}">{{nice_date}}</time><span aria-hidden="true">/</span>{{reading_time}} read</p>
+      <h1>{{title}}</h1>
+      <p class="post-sub">{{subtitle}}</p>
+    </header>
+    <div class="post-body">
+{{content}}
+    </div>
+    <footer class="post-foot">
+      <a href="../../#writing">More writing</a>
+      <a href="../../">Back to the homepage</a>
+    </footer>
+  </article>
+
+  <script src="../figures.js"></script>
+</body>
+</html>

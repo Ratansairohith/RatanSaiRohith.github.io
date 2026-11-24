@@ -60,6 +60,11 @@
 
   section("about", "About", (S.about || []).map(function (p) { return "<p>" + rich(p) + "</p>"; }).join(""));
 
+  section("writing", "Writing", (S.writing || []).map(function (w) {
+    return '<article class="post-item"><p class="meta">' + fmtDate(w.date) + (w.reading_time ? ", " + esc(w.reading_time) + " read" : "") +
+      '</p><h3><a href="' + esc(w.url) + '">' + esc(w.title) + "</a></h3>" + (w.summary ? "<p>" + rich(w.summary) + "</p>" : "") + "</article>";
+  }).join(""));
+
   var news = (S.news || []).slice().sort(function (a, b) { var x = String(a.date).slice(0, 4), y = String(b.date).slice(0, 4); return x < y ? 1 : x > y ? -1 : 0; });
   var SHOW = 5;
   if (news.length) {

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>I Built a Stock Research Desk Out of Agents. Then I Made It Grade Itself. | Ratan Kokku</title>
+  <meta name="description" content="A tour of my agent-run research desk: its daily routine, its graded track record (two chart patterns held up, most did not), and its full morning read on American Express.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="I Built a Stock Research Desk Out of Agents. Then I Made It Grade Itself.">
+  <meta property="og:description" content="A tour of my agent-run research desk: its daily routine, its graded track record (two chart patterns held up, most did not), and its full morning read on American Express.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/png" href="../../static/favicon.png">
+  <link rel="apple-touch-icon" href="../../static/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;800&family=Spectral:ital,wght@0,400;0,500;1,400&display=swap">
+  <script>
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="../../static/site.css">
+  <link rel="stylesheet" href="../post.css">
+</head>
+<body>
+  <a class="skip" href="#post">Skip to the post</a>
+  <div class="topbar">
+    <a class="mark" href="../../">Ratan Kokku</a>
+    <button class="theme" id="theme" type="button" aria-label="Switch color theme">Dark mode</button>
+  </div>
+
+  <article class="post" id="post">
+    <header class="post-head">
+      <p class="post-meta"><a href="../../#writing">Writing</a><span aria-hidden="true">/</span><time datetime="2026-11-23">November 23, 2026</time><span aria-hidden="true">/</span>9 min read</p>
+      <h1>I Built a Stock Research Desk Out of Agents. Then I Made It Grade Itself.</h1>
+      <p class="post-sub">What runs every day, what held up when scored, where it has been wrong, and one real stock walked through end to end.</p>
+    </header>
+    <div class="post-body">
+<h2>Why I built a research desk out of agents</h2>
+<p>I follow about 200 US stocks. Reading each one properly every morning means looking at the chart, the last earnings report, the news, what analysts think and what the rest of its sector is doing. One person cannot do that for 200 names before work. I tried. I ended up reading ten stocks well and ignoring the rest.</p>
+<p>So I built a desk. It is a set of scheduled research jobs. Code does the measuring, AI analysts do the reading and writing, and a second, senior reviewer checks each analyst's work before anything is published. Everything lands on one dashboard and in my inbox.</p>
+<p>Two things interest me most. The first is underdogs: good businesses whose stock has fallen or been left behind, where the business itself suggests it can recover. The second is early industry setups, the kind you can see in company spending, supply and pricing before they show up in the share price.</p>
+<p>I also wanted one rule from day one. The desk has to write down every call it makes and grade it later. If a signal does not work, I want to know, in numbers, and I want the desk to stop leaning on it.</p>
+<h2>The desk at a glance</h2>
+<p>Six jobs run on a schedule. All times are US Pacific.</p>
+<figure class="fig" data-fig="desk-diagram" data-note=""></figure>
+
+<table>
+<thead>
+<tr>
+<th>Job</th>
+<th>When</th>
+<th>What it produces</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Daily brief</td>
+<td>Weekdays, before the open</td>
+<td>What changed, signals to watch, a technical scan of every stock, sector direction, underdogs, and small studies the desk runs on its own questions</td>
+</tr>
+<tr>
+<td>Trigger check</td>
+<td>Weekdays, after the close</td>
+<td>Checks every price level written in advance against the day's close, rewrites about 20 chart reads, records and grades calls</td>
+</tr>
+<tr>
+<td>Earnings and verdict</td>
+<td>Weekday evenings</td>
+<td>Earnings cards for companies that reported, crowd and analyst sentiment, a news radar, and a combined verdict for every stock</td>
+</tr>
+<tr>
+<td>The lab</td>
+<td>Twice a week</td>
+<td>Research agents propose new signals; a fixed test decides which ones pass</td>
+</tr>
+<tr>
+<td>Weekly review</td>
+<td>Saturday morning</td>
+<td>Deep dives on underdogs, a wider market sweep, and written post-mortems on the desk's own calls</td>
+</tr>
+<tr>
+<td>Sunday prep</td>
+<td>Sunday morning</td>
+<td>The week ahead: who reports, the economic calendar, the levels closest to being crossed</td>
+</tr>
+</tbody>
+</table>
+<p>The roles matter more than the schedule. A chart analyst reads price. A fundamentals reader turns an earnings report into a short card: the figures, what was good, what was weak, and the bear case. A sector check asks whether a move belongs to the company or to its whole industry. A news radar and a sentiment read fill in the rest. Then code lays the reads side by side and says where they agree and where they conflict. That last step is the verdict. It is a summary of evidence, not a prediction.</p>
+<h2>What has worked</h2>
+<p>The desk grades its calls against how the typical stock it tracks did over the same 20 trading sessions. So 50% is a coin flip.</p>
+<p>Two chart patterns have held up:</p>
+<ul>
+<li><strong>Inverse head and shoulders</strong> (three dips where the middle one is deepest, often seen at the end of a decline): right 62% of the time across 228 cases.</li>
+<li><strong>Double bottom</strong> (two lows at about the same price with a bounce in between): right 59% of the time across 329 cases.</li>
+</ul>
+<p>Those hit rates come only from windows with no news event inside them, so they measure the pattern and not an earnings surprise.</p>
+<figure class="fig" data-fig="track-record" data-note=""></figure>
+
+<p><em>Hit rate by pattern over 20 sessions, against a 50% coin flip. Only windows with no news event are counted.</em></p>
+<p>Three other parts of the desk have earned their place.</p>
+<p><strong>The reviewer.</strong> In the American Express example below, the first draft of the earnings card missed that most of the profit growth came from a lower tax rate. The reviewer went back to the filing, added it, and marked the beat as lower quality.</p>
+<p><strong>The sector check.</strong> It is a simple comparison of a stock's daily moves with its sector fund. It has repeatedly stopped me from reading a market-wide drop as bad news about one company.</p>
+<p><strong>The lab's filter.</strong> Research agents have proposed 349 new signals. Four passed both tests and are in use. A filter that rejects 99% of ideas is doing its job, and every rejected idea stays on the record so the bar rises as more are tried.</p>
+<h2>Where it fails, and what I do about it</h2>
+<p>Most of what technical analysis textbooks teach did not beat chance on my stocks.</p>
+<p>The desk replayed its signals over about 36,000 past cases, using only the prices available on each past date. "Sitting on support", RSI extremes, Bollinger band touches and Fibonacci levels all came out no better than a coin flip. A double top was right 48% of the time. A cup and handle was right 40% of the time and a bear flag 34%, which means they tended to come before the opposite move.</p>
+<p>The analysts' confidence labels are not working yet either. Reads marked high conviction were right 48% of the time. Reads marked low conviction were right 50%. So far the label carries no information.</p>
+<p>And the desk has been plainly wrong on single stocks. On American Express, the stock I walk through below, its graded calls stand at 11 wrong and none right. That is an early result on one stock over about two months, and 9 of those windows had a news event inside them. It is still a bad record, and it is on the page the analyst sees before writing.</p>
+<p>Every miss gets a label. Code first tags whether an earnings date or an unusually large move sat inside the window. Then, once a week, a reviewer writes one line on each failure and marks it "method wrong" (the call itself was bad) or "news overrode it" (a dated event changed the picture). Of 112 post-mortems so far, 59 were news and 48 were method. Because code tags the events first, "news" cannot become an excuse bin.</p>
+<p>What I changed because of this:</p>
+<ul>
+<li>A pattern that has not beaten chance can still be drawn and named, but it can no longer be the reason for a call.</li>
+<li>Half of all crossed price levels were back on the other side within three sessions. The levels were too close to price, so the desk now sets them further away.</li>
+<li>Fibonacci and band levels count only as supporting evidence when they overlap something independent.</li>
+<li>Next, I will keep grading the conviction labels. If they still do not separate right from wrong, I will remove them.</li>
+</ul>
+<h2>One stock, end to end: American Express (AXP), Nov 23, 2026</h2>
+<p>This is the desk's actual read from the morning brief of Nov 23, 2026, using prices through Friday, Nov 20. Prices are adjusted for dividends, so older levels can sit slightly under the quoted price of the day.</p>
+<figure class="fig" data-fig="axp-chart" data-note=""></figure>
+
+<h3>Chart analyst</h3>
+<p>American Express closed at 301.70 after falling 5.9% in a week.</p>
+<p>Start with <strong>support</strong>: a price where a falling stock has repeatedly stopped and turned. The desk found one near 300.90 that has held five times this year. The stock is sitting right on it. There is an older one at 288.37.</p>
+<p>Above the price are the <strong>moving averages</strong>, which are just the average closing price over a recent stretch of days. The 21 day average is at 317.08, the 50 day at 318.34 and the 200 day at 321.80. The price is under all three, so each one is now a ceiling the stock has to climb back through. The first <strong>resistance</strong>, the mirror image of support, is at 313.24.</p>
+<p><strong>RSI</strong> is a 0 to 100 gauge of how hard a stock has been bought or sold recently. The desk reads it against each stock's own history. At 34, it is low for this stock.</p>
+<p>The chart code also drew two patterns: a double bottom, which is bullish, and a <strong>double top</strong> (two highs at about the same price, which is bearish). Both were drawn through the same swing points. One shape cannot be evidence for two opposite outcomes, so the analyst called it a forced pair and gave it no weight.</p>
+<p>Six flags were raised on the stock that morning. Here is what the backtest says about each.</p>
+<figure class="fig" data-fig="evidence-table" data-note=""></figure>
+
+<p>None of the six beat chance. The desk prints that next to the flags so nobody, including me, mistakes them for a reason to act.</p>
+<figure class="fig" data-fig="agent-cards" data-note=""></figure>
+
+<h3>Earnings and fundamentals reader</h3>
+<p>The <a rel="noopener" href="https://www.sec.gov/Archives/edgar/data/0000004962/000000496226000405/q326exhibit991.htm">third quarter report</a> of Oct 23 beat on earnings per share at 4.68, and the company <a rel="noopener" href="https://www.investing.com/news/stock-market-news/american-express-raises-2026-profit-forecast-as-affluent-customers-keep-spending-4968920">raised its full year forecast</a>. Card spending rose 8% and the write-off rate held at 1.8%.</p>
+<p>Underneath, profit before tax grew only about 2% once a lower tax rate, a release of loan reserves and a one-off gain are set aside. Costs grew as fast as revenue. The reader's call: the business is intact, the beat was lower quality than the headline, and the stock fell 3.7% on the day.</p>
+<h3>Sector check</h3>
+<p>The desk compared the stock's daily moves with the financials fund XLF over the past 250 sessions. American Express normally moves about 1.26 times as much as the fund. Measured that way, last week's drop belonged to the sector. The stock did 3.5% better than its link to the fund implied.</p>
+<figure class="fig" data-fig="sector-regression" data-note="AXP daily moves against XLF over 250 sessions, with last week highlighted"></figure>
+
+<h3>News radar</h3>
+<p>The main risk is political. On Nov 21 the President <a rel="noopener" href="https://thehill.com/business/6235394">said he would back a 10% cap on card interest rates</a> with Democrats. A <a rel="noopener" href="https://www.congress.gov/bill/119th-congress/senate-bill/381">bill exists</a> but has not moved since it was introduced. The radar also listed about 122 million dollars of insider share sales in early November, including the chief executive <a rel="noopener" href="https://mlq.ai/news/american-express-ceo-stephen-squeri-sold-99-million-of-stock-on-nov-4-outside-a-10b5-1-plan/">selling exercised options</a> outside a pre-set trading plan.</p>
+<h3>Sentiment</h3>
+<p>The retail crowd on Stocktwits reads neutral at 45 out of 100, close to the stock's own average for the month. Analysts are more positive. Per Finviz, their average price target is about 21% above the price and the average rating sits near Buy. Only 1.6% of tradable shares are sold short, meaning few investors are betting against it.</p>
+<h3>Own study</h3>
+<p>Each morning the desk can ask its own question and count. Here it asked: how often has this stock closed on a well-tested support while under both shorter averages, and what happened next?</p>
+<figure class="fig" data-fig="own-study" data-note=""></figure>
+
+<p>It found 15 earlier cases. The stock was higher 20 sessions later in 64% of them, with a median gain of 4.2%. For comparison, any random 20 sessions were higher 56% of the time. But in 9 of 14 cases the price first slipped 2% or more under the level. The desk's own verdict on its own count: too few cases to lean on.</p>
+<h3>Lead verdict</h3>
+<p>Two of five kinds of evidence agree: the business results and analyst expectations point up, and the other three do not. The call is watch, not act.</p>
+<p>The levels do the deciding:</p>
+<ul>
+<li>A close below <strong>301.03</strong> breaks the idea.</li>
+<li>A close below <strong>296.28</strong> confirms the floor has gone.</li>
+<li>A close back above <strong>313.24</strong> means the support held.</li>
+</ul>
+<h2>Same evening</h2>
+<p>By that evening the combined verdict for American Express read "No clear read".</p>
+<p>Nothing dramatic happened. The stock closed at 306.90, between the levels above. The morning count is a researcher's tally for one idea. The evening verdict is rebuilt by code from every read on the stock, and when it lined them up, the mixed earnings card, the neutral crowd and a low-conviction chart read cancelled out.</p>
+<p>I count that as a feature. A desk that cannot say "I don't know" will always find a story, and a story is the most common way to lose money on a chart.</p>
+<h2>What I'd tell someone building one</h2>
+<ol>
+<li><strong>Record every call when it is made.</strong> If you only remember the calls that worked, you do not have a track record.</li>
+<li><strong>Let code grade and let code tag the news.</strong> People are generous to their own misses.</li>
+<li><strong>Use two tiers.</strong> A reviewer who checks the source catches things a first draft will not.</li>
+<li><strong>Show the evidence next to the signal.</strong> "Sitting on support" reads very differently beside "did not beat chance in 7,761 cases".</li>
+<li><strong>Expect most ideas to fail.</strong> Four passes out of 349 is a normal result, not a broken lab.</li>
+</ol>
+<h2>A note before you go</h2>
+<p>This desk is research to inform my own decisions. It is not investment advice, and it does not place trades.</p>
+<p>I will update this post after about 20 trading sessions with what American Express did against each of the three levels, and how the desk graded its own call.</p>
+    </div>
+    <footer class="post-foot">
+      <a href="../../#writing">More writing</a>
+      <a href="../../">Back to the homepage</a>
+    </footer>
+  </article>
+
+  <script src="../figures.js"></script>
+</body>
+</html>

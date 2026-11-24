@@ -31,6 +31,17 @@ window.SITE = {
     "Earlier, I co-founded [Kshemin](https://ksheminlabs.com/), an edge-AI fleet-management startup in India, where I led a ten-person data science team and co-invented a patented driver-monitoring system. I have competed on Kaggle since 2017 and hold an M.S. in Data Science from Northeastern University."
   ],
 
+  // Blog posts. Newest first. Each post lives in writing/<slug>/ (see README).
+  writing: [
+    {
+      title: "I Built a Stock Research Desk Out of Agents. Then I Made It Grade Itself.",
+      date: "2026-11-23",
+      summary: "A tour of my agent-run research desk: its daily routine, its graded track record (two chart patterns held up, most did not), and its full morning read on American Express.",
+      reading_time: "9 min",
+      url: "writing/market-signals-desk/"
+    }
+  ],
+
   // Newest first. Items are grouped by year automatically; within a year they keep the order written here.
   news: [
     { date: "2026-11", text: "Joined the Strands team in AWS Agentic AI, working on multimodal decision models for agents and physical AI." },

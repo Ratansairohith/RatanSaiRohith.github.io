@@ -17,6 +17,13 @@ Common edits:
 - **Resume link:** set `resume` to a URL and a Resume link appears in the header.
 - Bump `updated` to today's date.
 
+## Writing a post
+
+1. Put the Markdown in `writing/<slug>/post.md`, starting with front matter (`title`, `subtitle`, `date`, `summary`, `reading_time`).
+2. Interactive figures go on their own line as `[[FIGURE: name]]`; the figure code lives in `writing/figures.js`.
+3. Run `python3 tools/build_post.py writing/<slug>/post.md` (needs `pip install markdown`) to create `writing/<slug>/index.html`.
+4. Add the post to `writing` in `content.js` so it shows on the homepage.
+
 ## Files
 
 - `index.html` page shell
